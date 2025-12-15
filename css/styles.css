@@ -1,0 +1,300 @@
+/* Основные стили */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fddcc4;
+}
+
+.content {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+.header {
+    background-color: #3e4444;
+    color: white;
+    padding: 20px;
+    text-align: left;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    margin-right: 20px;
+    width: 50px;
+    height: 50px;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+/* Menu */
+.menu {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: #d2b48c;
+}
+
+.menu a, .menu button {
+    text-decoration: none;
+}
+
+.butt-for-portfolio {
+    background-color: #f08080;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+/* Obo Mne */
+.Obo-mne {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.img-obo-mne {
+    flex-shrink: 0;
+}
+
+.Obo-mne img {
+    width: 275px;
+    height: 275px;
+    margin: 10px;
+    display: block;
+}
+
+.text_place {
+    flex: 1;
+    max-width: 600px;
+}
+
+.title_1 {
+    font-size: 2.5em;
+    color: #a52a2a;
+    margin-bottom: 20px;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 15px 0;
+}
+
+.icons img {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
+
+.Obo-mne p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin: 10px 0;
+}
+
+/* Portfolio */
+.portfolio {
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.portfolio h1 {
+    font-size: 2.5em;
+    color: #a52a2a;
+    margin-bottom: 30px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.site-title {
+    font-size: 1.3em;
+    margin-bottom: 15px;
+    text-align: center;
+    color: #333;
+}
+
+.site-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+/* Zakazat Site */
+.zakazat_site {
+    text-align: left;
+    padding: 30px;
+    margin-top: 20px;
+    background-color: #d2b48c;
+    border-radius: 10px;
+}
+
+.zakazat_site h1 {
+    font-size: 2.5em;
+    color: #a52a2a;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.zakazat_site p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.zakazat_site img {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.zakazat_site a {
+    color: #007bff;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-info {
+    flex: 1;
+    min-width: 300px;
+}
+
+.contact-form {
+    flex: 1;
+    min-width: 350px;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #d2b48c;
+    border-radius: 8px;
+    font-size: 1em;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #a52a2a;
+    background-color: white;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+    font-family: inherit;
+}
+
+.submit-btn {
+    background-color: #a52a2a;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 8px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    font-weight: bold;
+}
+
+.submit-btn:hover {
+    background-color: #8b0000;
+}
+
+/* Footer */
+.footer {
+    background-color: #3e4444;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* Кнопка "Перейти" */
+.minimal-button {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: transparent;
+    color: #333;
+    text-decoration: none;
+    border: 2px solid #333;
+    border-radius: 3px;
+    font-size: 16px;
+    transition: all 0.3s;
+    margin-top: 10px;
+}
+
+.minimal-button:hover {
+    background-color: #333;
+    color: white;
+}
