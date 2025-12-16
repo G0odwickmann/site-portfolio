@@ -58,6 +58,11 @@ body {
     font-size: 1em;
 }
 
+.butt-for-portfolio:hover {
+    background-color: #c46868;
+    color: #fff0f0;
+}
+
 /* Obo Mne */
 .Obo-mne {
     display: flex;
@@ -297,4 +302,5 @@ body {
 .minimal-button:hover {
     background-color: #333;
     color: white;
+
 }
