@@ -295,7 +295,6 @@ body {
     border: 2px solid #333;
     border-radius: 3px;
     font-size: 16px;
-    transition: all 0.3s;
     margin-top: 10px;
 }
 
@@ -304,3 +303,4 @@ body {
     color: white;
 
 }
+
